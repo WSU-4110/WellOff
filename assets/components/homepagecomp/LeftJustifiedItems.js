@@ -1,0 +1,65 @@
+/* eslint-disable prettier/prettier */
+import * as React from 'react';
+import {Text, View, StyleSheet} from 'react-native';
+
+export default function LeftJustifiedItems() {
+    return (
+<View style={styles.container}>
+    <View style={styles.space} />
+    <View style = {styles.TimeContainer}>
+    <Text style={styles.TimeSample1}>Steps Taken <Text style={styles. SampleContent}>  3578/5000</Text> </Text>
+    </View>
+    <View style={styles.space} />
+    <View style={styles.TimeContainer}>
+    <Text style={styles.TimeSample2}>Screen time <Text style={styles.SampleContent}>  4h/3h</Text></Text>
+    </View>
+    <View style={styles.space} />
+    <View style={styles.TimeContainer}>
+    <Text style={styles.TimeSample3}>Sleep <Text style={styles. SampleContent}>  6h/8h</Text></Text>
+    </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  TimeContainer: {
+    padding: 3,
+    backgroundColor: 'azure',
+    height: 28,
+    width: 150,
+  },
+  TimeSample1: {
+    alignItems: 'center',
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#191970',
+  },
+  TimeSample2: {
+    alignItems: 'center',
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#191970',
+  },
+  TimeSample3: {
+    alignItems: 'center',
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#191970',
+  },
+  SampleContent: {
+    alignItems: 'center',
+    fontSize: 11,
+    fontWeight: 'bold',
+    color: '#4169e1',
+  },
+  container: {
+  position: 'absolute',
+  top: 0,
+  alignItems: 'center',
+  justifyContent:'center',
+  width: 180,
+  },
+  space: {
+    padding: 4,
+  },
+});

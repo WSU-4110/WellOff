@@ -1,47 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    header: {
-        backgroundColor: "#05445E",
-    },
-    headerContent: {
-        padding: 30,
-        alignItems: 'center',
-    },
-    sectionTitle: {
-        fontSize: 22,
-        color: "white",
-        fontWeight: '600',
-    },
-    h2: {
-        fontSize: 16,
-        color: "white",
-        fontWeight: '600',
-    },
     body: {
         backgroundColor: "#05445E",
         height: 800,
         alignItems: 'center',
-    },
-    infoContent: {
-        flex: 1,
-        alignItems: 'flex-start',
-        paddingLeft: 5
-    },
-    iconContent: {
-        flex: 1,
-        alignItems: 'flex-end',
-        paddingRight: 5,
-    },
-    icon: {
-        width: 30,
-        height: 30,
-        marginTop: 20,
-    },
-    info: {
-        fontSize: 18,
-        marginTop: 20,
-        color: "#05445E",
     },
     buttonContainer: {
         height: 40,
@@ -57,22 +20,52 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: "bold",
     },
-    sectionContainer: {
-      marginTop: 32,
-      paddingHorizontal: 24,
+    highlight: {
+      fontWeight: '700',
     },
-    sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
+    infoContent: {
+        flex: 1,
+        alignItems: 'flex-start',
+        paddingLeft: 5
+    },
+    icon: {
+        width: 30,
+        height: 30,
+        marginTop: 20,
+    },
+    info: {
+        fontSize: 18,
+        marginTop: 20,
+        color: "#05445E",
     },
     sectionDescription: {
       marginTop: 8,
       fontSize: 18,
       fontWeight: '400',
+      paddingTop: 40,
+      paddingLeft: 20,
     },
-    highlight: {
-      fontWeight: '700',
+    sectionContainer: {
+      marginTop: 16,
+      paddingHorizontal: 24,
+      marginBottom: 16,
     },
+    sectionTitle: {
+        fontSize: 22,
+        color: "white",
+        fontWeight: '600',
+        backgroundColor: "#05445E",
+        paddingLeft: 5
+    },
+    switch: {
+        alignItems: 'flex-end',
+    },
+    switchContainer: {
+        flexDirection: 'row', 
+        paddingTop: 20,
+        paddingLeft: 5,
+        justifyContent: 'space-between'
+    }
 });
 
 export default styles;

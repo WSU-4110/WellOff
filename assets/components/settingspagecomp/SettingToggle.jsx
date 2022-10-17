@@ -5,7 +5,7 @@ import style from '../../../styles';
 
 export default function SettingToggle(props) {
 
-    const [switchValue, setswitchValue] = useState(false);
+    const [switchValue, setswitchValue] = useState(props.value);
 
     const toggleSwitch = (value) => {
         setswitchValue(value);
@@ -14,6 +14,7 @@ export default function SettingToggle(props) {
     return (
         <View style={style.switchContainer}>
             <Text>{props.name}</Text>
+            {/* <Text>{(props.value) ? "true" : "false"}</Text> example of how you display a boolean value*/}
             <View style={{ justifyContent: 'space-evenly' }}>
                 <Switch style={style.switch}
                     onValueChange={toggleSwitch}

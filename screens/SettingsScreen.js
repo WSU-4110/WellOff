@@ -1,24 +1,17 @@
-import React, { useState } from 'react';
-import { View, Text, Switch, ScrollView } from 'react-native';
+import React from 'react';
+import { Text, ScrollView } from 'react-native';
 import SettingsToggle from '../assets/components/settingspagecomp/SettingToggle'
 import SettingsHeader from '../assets/components/settingspagecomp/SettingHeader'
 
-import style from '../styles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from '../styles';
 
 export default function SettingsScreen() {
-    const [switchValue, setswitchValue] = useState(false);
-
-    const toggleSwitch = (value) => {
-        setswitchValue(value);
-    }
-
     return (
         <SafeAreaView>
             <ScrollView>
                 <SettingsHeader name="Appearance">
-                    <SettingsToggle name="Dark Mode" />
+                    <SettingsToggle name="Dark Mode" value={true}/>
                     <Text style={styles.switchContainer}>Themes: [put dropdown here]</Text>
                 </SettingsHeader>
                 <SettingsHeader name="Permissions">

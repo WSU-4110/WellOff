@@ -1,0 +1,71 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+    body: {
+        backgroundColor: "#05445E",
+        height: 800,
+        alignItems: 'center',
+    },
+    buttonContainer: {
+        height: 40,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10,
+        width: 250,
+        borderRadius: 10,
+        backgroundColor: "#D4F1F4",
+        alignItems: 'center',
+        fontSize: 16,
+        color: "white",
+        fontWeight: "bold",
+    },
+    highlight: {
+      fontWeight: '700',
+    },
+    infoContent: {
+        flex: 1,
+        alignItems: 'flex-start',
+        paddingLeft: 5
+    },
+    icon: {
+        width: 30,
+        height: 30,
+        marginTop: 20,
+    },
+    info: {
+        fontSize: 18,
+        marginTop: 20,
+        color: "#05445E",
+    },
+    sectionDescription: {
+      marginTop: 8,
+      fontSize: 18,
+      fontWeight: '400',
+      paddingTop: 40,
+      paddingLeft: 20,
+    },
+    sectionContainer: {
+      marginTop: 16,
+      paddingHorizontal: 24,
+      marginBottom: 16,
+    },
+    sectionTitle: {
+        fontSize: 22,
+        color: "white",
+        fontWeight: '600',
+        backgroundColor: "#05445E",
+        paddingLeft: 5
+    },
+    switch: {
+        alignItems: 'flex-end',
+    },
+    switchContainer: {
+        flexDirection: 'row', 
+        paddingTop: 20,
+        paddingLeft: 5,
+        justifyContent: 'space-between'
+    }
+});
+
+export default styles;

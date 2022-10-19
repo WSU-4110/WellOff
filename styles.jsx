@@ -28,16 +28,6 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         paddingLeft: 5
     },
-    icon: {
-        width: 30,
-        height: 30,
-        marginTop: 20,
-    },
-    info: {
-        fontSize: 18,
-        marginTop: 20,
-        color: "#05445E",
-    },
     sectionDescription: {
       marginTop: 8,
       fontSize: 18,

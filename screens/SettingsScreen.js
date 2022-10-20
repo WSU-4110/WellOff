@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, ScrollView } from 'react-native';
 import SettingsToggle from '../assets/components/settingspagecomp/SettingToggle'
 import SettingsHeader from '../assets/components/settingspagecomp/SettingHeader'
+import DropDown from '../assets/components/DropDown'
 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from '../styles';
@@ -11,7 +12,14 @@ export default function SettingsScreen() {
         <SafeAreaView>
             <ScrollView>
                 <SettingsHeader name="Appearance">
-                    <SettingsToggle name="Dark Mode" value={true}/>
+                    <SettingsToggle name="Dark Mode" value={true} />
+                    <DropDown name="Themes: "
+                        data={[
+                            { key: '1', value: 'Blue' },
+                            { key: '2', value: 'Green' },
+                            { key: '3', value: 'Red' },
+                            { key: '4', value: 'Pink' },
+                        ]} />
                     <Text style={styles.switchContainer}>Themes: [put dropdown here]</Text>
                 </SettingsHeader>
                 <SettingsHeader name="Permissions">

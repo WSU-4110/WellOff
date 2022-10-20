@@ -38,7 +38,7 @@
       })}>
       
         <Tab.Screen name ="Home" component = {HomeScreen}/>
-        <Tab.Screen name ="MyPlan" component = {MyPlanScreen}/>
+        <Tab.Screen name ="My Plan" component = {MyPlanScreen}/>
         <Tab.Screen name ="Reminders" component = {RemindersScreen}/>
         <Tab.Screen name ="Settings" component = {SettingsScreen}/>
       </Tab.Navigator>

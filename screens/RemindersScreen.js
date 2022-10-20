@@ -23,7 +23,7 @@ const RemindersScreen = () => {
 
 const styles = StyleSheet.create({
     container: {
-      backgroundColor: 'antiquewhite'
+      backgroundColor: '#D4F1F4'
     }
 });
 export default RemindersScreen;

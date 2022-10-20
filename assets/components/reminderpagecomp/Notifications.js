@@ -24,7 +24,7 @@ export default function Notification(){
 
 const styles = StyleSheet.create({
     text: {
-        color: 'darkslateblue', 
+        color: '#05445E', 
         fontSize: 20, 
         paddingTop: 40,
         paddingLeft: 20,

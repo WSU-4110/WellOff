@@ -24,7 +24,7 @@ export default function WeeklyReport(){
 
 const styles = StyleSheet.create({
     text: {
-        color: 'darkslateblue', 
+        color: '#05445E', 
         fontSize: 20, 
         // paddingTop: 80,
         paddingLeft: 20,

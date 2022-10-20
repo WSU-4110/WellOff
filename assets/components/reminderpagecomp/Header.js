@@ -12,12 +12,12 @@ export default function Header(){
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        backgroundColor: 'lightgrey',
+        backgroundColor: '#75E6DA',
         justifyContent: 'center',
       },
      
       title: {
-         color: 'darkslateblue', 
+         color: '#05445E', 
          fontSize: 40,
          fontWeight: 'bold',
       },

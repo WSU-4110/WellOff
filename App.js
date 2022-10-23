@@ -24,7 +24,7 @@
           if(route.name === 'Home'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
-          else if(route.name === 'MyPlan'){
+          else if(route.name === 'My Plan'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
           else if(route.name === 'Reminders'){

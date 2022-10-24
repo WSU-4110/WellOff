@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     highlight: {
-      fontWeight: '700',
+        fontWeight: '700',
     },
     infoContent: {
         flex: 1,
@@ -29,16 +29,16 @@ const styles = StyleSheet.create({
         paddingLeft: 5
     },
     sectionDescription: {
-      marginTop: 8,
-      fontSize: 18,
-      fontWeight: '400',
-      paddingTop: 40,
-      paddingLeft: 20,
+        marginTop: 8,
+        fontSize: 18,
+        fontWeight: '400',
+        paddingTop: 40,
+        paddingLeft: 20,
     },
     sectionContainer: {
-      marginTop: 16,
-      paddingHorizontal: 24,
-      marginBottom: 16,
+        marginTop: 16,
+        paddingHorizontal: 24,
+        marginBottom: 16,
     },
     sectionTitle: {
         fontSize: 22,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
     },
     switchContainer: {
-        flexDirection: 'row', 
+        flexDirection: 'row',
         paddingTop: 20,
         paddingLeft: 5,
         justifyContent: 'space-between'

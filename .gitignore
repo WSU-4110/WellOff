@@ -62,4 +62,6 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
-.vscode/.react/debuggerWorker.js
+
+# VSCode
+.vscode/.react/*

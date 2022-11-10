@@ -5,7 +5,7 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-public class Settings extends ReactContextBaseJavaModule{
+public class AppSettings extends ReactContextBaseJavaModule{
     //toggles
     private static boolean healthEnabled = false;
     private static boolean locationEnabled = false;
@@ -15,7 +15,7 @@ public class Settings extends ReactContextBaseJavaModule{
     @ReactMethod
     public static String test = "test";
 
-    Settings(ReactApplicationContext context){
+    AppSettings(ReactApplicationContext context){
         super(context);
     }
 
@@ -32,7 +32,7 @@ public class Settings extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public static final void setHealthEnabled(boolean isHealthEnabled){
-        Settings.healthEnabled = isHealthEnabled;
+        AppSettings.healthEnabled = isHealthEnabled;
         //do further processing to enable health settings
     }
 
@@ -42,7 +42,7 @@ public class Settings extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public static final boolean getHealthEnabled(){
-        return Settings.healthEnabled;
+        return AppSettings.healthEnabled;
     }
 
     /**
@@ -51,7 +51,7 @@ public class Settings extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public static final void setLocationEnabled(boolean isLocationEnabled){
-        Settings.locationEnabled = isLocationEnabled;
+        AppSettings.locationEnabled = isLocationEnabled;
     }
 
     /**
@@ -60,7 +60,7 @@ public class Settings extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public static final boolean getLocationEnabled(){
-        return Settings.locationEnabled;
+        return AppSettings.locationEnabled;
     }
 
     /**
@@ -69,7 +69,7 @@ public class Settings extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public static final void setTheme(String theme){
-        Settings.theme = theme;
+        AppSettings.theme = theme;
         //do further processing to change the theme color
     }
 
@@ -89,7 +89,7 @@ public class Settings extends ReactContextBaseJavaModule{
      */
     @ReactMethod
     public static final String getTheme(){
-        return new String(Settings.theme);
+        return new String(AppSettings.theme);
     }
 
     @Override

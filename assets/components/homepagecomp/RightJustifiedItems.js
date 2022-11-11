@@ -9,10 +9,15 @@ export default function RightJustifiedItems() {
       setTime(time);
     }, []);
 
+    const getMinutes = () => {
+      let minutes = (today.getMinutes() < 10 ? '0' : '') + today.getMinutes();
+      return minutes;
+    
+    }
     const getCurrentTime = () => {
         let today = new Date();
         let hours = (today.getHours() < 10 ? '0' : '') + today.getHours();
-        let minutes = (today.getMinutes() < 10 ? '0' : '') + today.getMinutes();
+        let minutes = getMinutes();
         let seconds = (today.getSeconds() < 10 ? '0' : '') + today.getSeconds();
         return hours + ':' + minutes + ':' + seconds;
       }

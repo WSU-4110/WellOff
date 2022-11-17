@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ScrollView } from 'react-native';
+import { Text, ScrollView, NativeModules } from 'react-native';
 import SettingsToggle from '../assets/components/settingspagecomp/SettingToggle'
 import SettingsHeader from '../assets/components/settingspagecomp/SettingHeader'
 import DropDown from '../assets/components/DropDown'
@@ -14,6 +14,7 @@ export default function SettingsScreen() {
             <ScrollView>
                 <SettingsHeader name="Appearance">
                     <SettingsToggle name="Dark Mode" value={true} />
+                    <Text>{ test.test() }</Text>
                     <DropDown name="Themes: "
                         data={[
                             { key: '1', value: 'Blue' },

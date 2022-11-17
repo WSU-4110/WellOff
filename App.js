@@ -24,7 +24,7 @@
           if(route.name === 'Home'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
-          else if(route.name === 'MyPlan'){
+          else if(route.name === 'My Plan'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
           else if(route.name === 'Reminders'){
@@ -38,7 +38,7 @@
       })}>
       
         <Tab.Screen name ="Home" component = {HomeScreen}/>
-        <Tab.Screen name ="MyPlan" component = {MyPlanScreen}/>
+        <Tab.Screen name ="My Plan" component = {MyPlanScreen}/>
         <Tab.Screen name ="Reminders" component = {RemindersScreen}/>
         <Tab.Screen name ="Settings" component = {SettingsScreen}/>
       </Tab.Navigator>

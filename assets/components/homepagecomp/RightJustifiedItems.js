@@ -1,8 +1,30 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Alert, Button, Platform} from 'react-native';
+import {DateTimePicker} from'@react-native-community/DateTimePicker' 
 
 export default function RightJustifiedItems() {
+  const{date2, setDate2} = useState(new Date());
+  const{mode, setMode} = useState('date');
+  const{show, setShow} = useState(false);
+  const{text, setText} = useState('Empty');
+
+const onChange = (event, selectedDate) => {
+  const currentDate = selectedDate || date;
+  setShow(Platform.Android === 'android');
+  setDate(currentDate);
+
+  let tempDate = new Date(currentDate);
+  let fDate = tempDate.getDate() + '/' + (tempDate.getMonth() + '/' + tempDate.getFullYear());
+  setText(fDate + '\n');
+
+}
+
+const showMode = (currentMode) => {
+  setShow(true);
+  setMode(currentMode);
+}
+
     const [time, setTime] = useState(null);
     useEffect(() => {
       let time = getCurrentTime();
@@ -24,14 +46,29 @@ export default function RightJustifiedItems() {
         setDate(date);
       }, []);
 
+
     return (
-<View style={styles.container}>
+      <View style={styles.container}>
+  <TouchableOpacity title='DatePicker' onPress={() => showMode('date2')}>
     <View style={styles.space} />
     <View style = {styles.TimeContainer}>
     <Text style={styles.TimeSample1}>{time}</Text>
     <Text style={styles.TimeSample2}>{date}</Text>
     </View>
-    </View>
+  </TouchableOpacity>
+
+  {show && (
+  <DateTimePicker
+  testID='dateTimePicker'
+  value={date2}
+  mode={mode}
+  is24Hour={true}
+  display='default'
+  onChange={onChange}
+  />)}
+
+  </View>
+
   );
 }
 

@@ -5,7 +5,6 @@
  import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
  import HomeScreen from './screens/HomeScreen';
  import MyPlanScreen from './screens/MyPlanScreen';
- import RemindersScreen from './screens/RemindersScreen';
  import SettingsScreen from './screens/SettingsScreen';
  
  const App = () => {
@@ -13,6 +12,7 @@
    return (
      <NavigationContainer>
       <Tab.Navigator
+      initialRouteName={HomeScreen}
       screenOptions={({route}) => ({
         tabBarShowLabel: false,
         tabBarStyle: {
@@ -27,9 +27,6 @@
           else if(route.name === 'MyPlan'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
-          else if(route.name === 'Reminders'){
-            iconName = focused ? 'ios-home' : 'ios-home-outline';
-          }
           else if(route.name === 'Settings'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
@@ -39,7 +36,6 @@
       
         <Tab.Screen name ="Home" component = {HomeScreen}/>
         <Tab.Screen name ="MyPlan" component = {MyPlanScreen}/>
-        <Tab.Screen name ="Reminders" component = {RemindersScreen}/>
         <Tab.Screen name ="Settings" component = {SettingsScreen}/>
       </Tab.Navigator>
      </NavigationContainer>

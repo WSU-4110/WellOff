@@ -1,13 +1,19 @@
 /* eslint-disable prettier/prettier */
-import React, { useState, useEffect } from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {React, Component, useState, useEffect } from 'react';
+import {Text, View, StyleSheet, TouchableHighlight, TouchableOpacity, Platform, Button} from 'react-native';
+import {DateTimePicker} from '@react-native-modal-datetime-picker';
+import moment from 'moment';
+import { render } from 'react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod';
+import RightJustifiedDatePick from './RightJustifiedDatePick';
 
-export default function RightJustifiedItems() {
+export default function RightJustifiedItems(){  
+
     const [time, setTime] = useState(null);
     useEffect(() => {
       let time = getCurrentTime();
       setTime(time);
     }, []);
+
 
     const getCurrentTime = () => {
         let today = new Date();
@@ -24,16 +30,20 @@ export default function RightJustifiedItems() {
         setDate(date);
       }, []);
 
+
     return (
-<View style={styles.container}>
+    <View styles={styles.container}>
     <View style={styles.space} />
     <View style = {styles.TimeContainer}>
     <Text style={styles.TimeSample1}>{time}</Text>
     <Text style={styles.TimeSample2}>{date}</Text>
     </View>
-    </View>
-  );
-}
+      </View>
+        );
+ };
+
+
+
 
 const styles = StyleSheet.create({
   TimeContainer: {

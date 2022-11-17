@@ -1,14 +1,12 @@
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-export default function WeeklyReport() {
+export default function StepsReport() {
   return (
     <View style={styles.HeaderContainer}>
-      <Text style={styles.HeaderItem}>Weekly Report</Text>
-      <Text style={styles.HighlightsItem}>Average Weekly Steps</Text>
-      <Text style={styles.HighlightsSubItem}>4000 Steps</Text>
-      <Text style={styles.HighlightsItem}>Average Weekly Screen Time</Text>
-      <Text style={styles.HighlightsSubItem}>5 Hours </Text>
+      <Text style={styles.HeaderItem}>Screen Time</Text>
+      <Text style={styles.HighlightsItem}>Screen Time</Text>
+      <Text style={styles.HighlightsSubItem}>4 Hours</Text>
     </View>
   );
 }

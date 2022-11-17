@@ -6,7 +6,9 @@
  import HomeScreen from './screens/HomeScreen';
  import MyPlanScreen from './screens/MyPlanScreen';
  import SettingsScreen from './screens/SettingsScreen';
- 
+ import ReminderScreen from './screens/MyPlanScreens/RemindersScreen'
+ import HealthScreen from './screens/MyPlanScreens/HealthScreen';
+
  const App = () => {
   const Tab = createBottomTabNavigator()
    return (
@@ -30,6 +32,12 @@
           else if(route.name === 'Settings'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
+          else if(route.name === 'Reminders'){
+            iconName = focused ? 'ios-home' : 'ios-home-outline';
+          }
+          else if(route.name === 'Health'){
+            iconName = focused ? 'ios-home' : 'ios-home-outline';
+          }
           return <Ionic name={iconName} size={size} color={color} />;
         },
       })}>
@@ -37,6 +45,8 @@
         <Tab.Screen name ="Home" component = {HomeScreen}/>
         <Tab.Screen name ="MyPlan" component = {MyPlanScreen}/>
         <Tab.Screen name ="Settings" component = {SettingsScreen}/>
+        <Tab.Screen name ="Reminders" component = {ReminderScreen}/>
+        <Tab.Screen name ="Health" component = {HealthScreen}/>
       </Tab.Navigator>
      </NavigationContainer>
    );

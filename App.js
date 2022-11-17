@@ -12,7 +12,9 @@
    return (
      <NavigationContainer>
       <Tab.Navigator
+
       initialRouteName={HomeScreen}
+      
       screenOptions={({route}) => ({
         tabBarShowLabel: false,
         tabBarStyle: {

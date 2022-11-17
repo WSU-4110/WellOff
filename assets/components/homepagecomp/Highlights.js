@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, ScrollView} from 'react-native';
 
 export default function Highlights() {
   return (
+    <ScrollView>
     <View style={styles.HeaderContainer}>
       <Text style={styles.HeaderItem}>Daily Highlights Module</Text>
       <Text style={styles.HighlightsItem}>Steps Taken</Text>
@@ -11,6 +12,7 @@ export default function Highlights() {
       <Text style={styles.HighlightsItem}>Average Screentime</Text>
       <Text style={styles.HighlightsSubItem}>3 hr</Text>
     </View>
+    </ScrollView>
   );
 }
 

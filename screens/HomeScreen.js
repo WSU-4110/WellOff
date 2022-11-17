@@ -1,10 +1,12 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Text, StyleSheet, } from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, } from 'react-native';
 
 import Highlights from '../assets/components/homepagecomp/Highlights';
 import LeftJustifiedItems from '../assets/components/homepagecomp/LeftJustifiedItems';
-import RightJustifiedItems from '../assets/components/homepagecomp/RightJustifiedItems';
 import TimeModule from '../assets/components/homepagecomp/TimeModule';
+import RightJustifiedDatePick from '../assets/components/homepagecomp/RightJustifiedDatePick';
+import CircularGraph from '../assets/components/homepagecomp/CircularGraph';
 
 
 const HomeScreen = () => {
@@ -12,13 +14,16 @@ const HomeScreen = () => {
       <View style={styles.container}>
       <LeftJustifiedItems />
       <View style={styles.space} />
-      <View style={styles.pngspace} />
+      <RightJustifiedDatePick />
+      <View style={styles.pngspace2} />
+      <CircularGraph/>
+      <View style={styles.pngspace3} />
+      <View style={styles.space} />
       <TimeModule />
       <View style={styles.space} />
       <View style={styles.space} />
       <Highlights />
       <View style={styles.space} />
-      <RightJustifiedItems />
       <View style={styles.space} />
     </View>
     );
@@ -36,6 +41,12 @@ const styles = StyleSheet.create({
   },
   pngspace: {
     padding: 125,
+  },
+  pngspace2: {
+    padding: 75,
+  },
+  pngspace3: {
+    padding: 40,
   },
 });
 

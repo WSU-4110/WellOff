@@ -17,7 +17,7 @@ router.get('/dark-mode-status', function(req, res){
 });
 
 router.get('/google-fit-status', function(req, res){
-    res.json(GoogleFit.isAuthorized)
+    res.json({status: GoogleFit.isAuthorized})
 });
 
 router.set('/set-google-fit-status', function(req, res){
@@ -38,6 +38,10 @@ router.set('/set-google-fit-status', function(req, res){
             })
     }
 });
+
+router.get('/get-todays-steps', function(req, res)){
+    res.json()
+}
 
 //Routes will go here
 module.exports = router;

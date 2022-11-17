@@ -5481,7 +5481,7 @@
   dependencies:
     "minimist" "^1.2.6"
 
-"moment@^2.29.0", "moment@^2.29.4":
+"moment@^2.29.0", "moment@^2.29.2", "moment@^2.29.4":
   "integrity" "sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w=="
   "resolved" "https://registry.npmjs.org/moment/-/moment-2.29.4.tgz"
   "version" "2.29.4"
@@ -6175,6 +6175,13 @@
     "lodash" "^4.17.21"
     "prop-types" "^15.7.2"
 
+"react-native-google-fit@^0.19.1":
+  "integrity" "sha512-vRhzPB9nZXkKnCDy0e5Ibn5s0AKQhVVQBvNHZuNBQlnNMqIYhSo6GieymPgSTWuWmew/PnFx7VnuHbeeKnX+zQ=="
+  "resolved" "https://registry.npmjs.org/react-native-google-fit/-/react-native-google-fit-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "moment" "^2.29.2"
+
 "react-native-gradle-plugin@^0.70.3":
   "integrity" "sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A=="
   "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz"
@@ -6216,7 +6223,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@>= 0.50.0", "react-native@>=0.65.0", "react-native@0.70.1":
+"react-native@*", "react-native@>= 0.50.0", "react-native@>=0.60.0", "react-native@>=0.65.0", "react-native@0.70.1":
   "integrity" "sha512-AUh4NZLFdvyjSiYWCtTROCrC7loxeeZ/TzBnkZwp3kb9XmMu7/kzvWn2c5sEMnzW7X/0JSul8jXexGVdpnCoSA=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.70.1.tgz"
   "version" "0.70.1"

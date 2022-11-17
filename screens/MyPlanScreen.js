@@ -2,15 +2,16 @@ import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
+import styles from '../styles'
 
 const MyPlanScreen = () => {
     return (
-        <View style={styles.container}>
-          <View style={styles.header}>
-            <View style={styles.headerContent}>
-                <Image style={styles.avatar}
+        <View style={style.container}>
+          <View style={style.header}>
+            <View style={style.headerContent}>
+                <Image style={style.avatar}
                   source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
-                <Text style={styles.name}>Matt Meyer </Text>
+                <Text style={style.name}>Matt Meyer </Text>
             </View>
           </View>
           <View style={styles.body}>
@@ -34,7 +35,7 @@ const MyPlanScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
     header:{
       backgroundColor: "#05445E",
     },
@@ -60,11 +61,6 @@ const styles = StyleSheet.create({
       color:"white",
       fontWeight:'600',
     },
-    body:{
-      backgroundColor: "#05445E",
-      height:800,
-      alignItems:'center',
-    },
     item:{
       flexDirection : 'row',
     },
@@ -87,20 +83,6 @@ const styles = StyleSheet.create({
       fontSize:18,
       marginTop:20,
       color: "#05445E",
-    },
-      buttonContainer: {
-      height:40,
-      flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginBottom:10,
-      width:250,
-      borderRadius:10,
-      backgroundColor: "#D4F1F4",
-      alignItems: 'center',
-       fontSize:16,
-      color:"white",
-      fontWeight:"bold",
     },
   });
 

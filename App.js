@@ -6,6 +6,9 @@
  import HomeScreen from './screens/HomeScreen';
  import MyPlanScreen from './screens/MyPlanScreen';
  import SettingsScreen from './screens/SettingsScreen';
+ import RemindersScreen from './screens/RemindersScreen'
+ import EditPreferencesScreen from './screens/EditPreferences'
+ import EditProfileScreen from './screens/EditProfile'
  
  const App = () => {
   const Tab = createBottomTabNavigator()
@@ -32,6 +35,15 @@
           else if(route.name === 'Settings'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
+          else if(route.name === 'Reminders'){
+            iconName = focused ? 'ios-home' : 'ios-home-outline';
+          }
+          else if(route.name === 'Preferences'){
+            iconName = focused ? 'ios-home' : 'ios-home-outline';
+          }
+          else if(route.name === 'Profile'){
+            iconName = focused ? 'ios-home' : 'ios-home-outline';
+          }
           return <Ionic name={iconName} size={size} color={color} />;
         },
       })}>
@@ -39,6 +51,9 @@
         <Tab.Screen name ="Home" component = {HomeScreen}/>
         <Tab.Screen name ="MyPlan" component = {MyPlanScreen}/>
         <Tab.Screen name ="Settings" component = {SettingsScreen}/>
+        <Tab.Screen name ="Reminders" component = {RemindersScreen}/>
+        <Tab.Screen name ="Preferences" component = {EditPreferencesScreen}/>
+        <Tab.Screen name ="Profile" component = {EditProfileScreen}/>
       </Tab.Navigator>
      </NavigationContainer>
    );

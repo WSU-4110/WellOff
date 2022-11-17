@@ -14,19 +14,22 @@ const MyPlanScreen = () => {
           <View style={styles.body}>
             <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Edit Profile</Text>  
-              </TouchableOpacity>              
+              </TouchableOpacity>     
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Edit Preferences</Text> 
               </TouchableOpacity>
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Health Stats</Text> 
               </TouchableOpacity>
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Edit Notifications</Text> 
               </TouchableOpacity>
           </View>
-          </View>
-    );
+        </View>
+  );
 };
 
 const styles = StyleSheet.create({

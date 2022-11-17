@@ -1,5 +1,7 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import { createStackNavigator } from 'react-navigation-stack';
 import styles from '../styles'
 
 const MyPlanScreen = () => {
@@ -15,19 +17,22 @@ const MyPlanScreen = () => {
           <View style={styles.body}>
             <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Edit Profile</Text>  
-              </TouchableOpacity>              
+              </TouchableOpacity>     
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Edit Preferences</Text> 
               </TouchableOpacity>
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Health Stats</Text> 
               </TouchableOpacity>
+
               <TouchableOpacity style={styles.buttonContainer}>
                 <Text>Edit Notifications</Text> 
               </TouchableOpacity>
           </View>
-          </View>
-    );
+        </View>
+  );
 };
 
 const style = StyleSheet.create({

@@ -5,14 +5,16 @@
  import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
  import HomeScreen from './screens/HomeScreen';
  import MyPlanScreen from './screens/MyPlanScreen';
- import RemindersScreen from './screens/RemindersScreen';
  import SettingsScreen from './screens/SettingsScreen';
- 
+ import ReminderScreen from './screens/MyPlanScreens/RemindersScreen'
+ import HealthScreen from './screens/MyPlanScreens/HealthScreen';
+
  const App = () => {
   const Tab = createBottomTabNavigator()
    return (
      <NavigationContainer>
       <Tab.Navigator
+      initialRouteName={HomeScreen}
       screenOptions={({route}) => ({
         tabBarShowLabel: false,
         tabBarStyle: {
@@ -27,10 +29,13 @@
           else if(route.name === 'My Plan'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
+          else if(route.name === 'Settings'){
+            iconName = focused ? 'ios-home' : 'ios-home-outline';
+          }
           else if(route.name === 'Reminders'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
-          else if(route.name === 'Settings'){
+          else if(route.name === 'Health'){
             iconName = focused ? 'ios-home' : 'ios-home-outline';
           }
           return <Ionic name={iconName} size={size} color={color} />;
@@ -41,6 +46,8 @@
         <Tab.Screen name ="My Plan" component = {MyPlanScreen}/>
         <Tab.Screen name ="Reminders" component = {RemindersScreen}/>
         <Tab.Screen name ="Settings" component = {SettingsScreen}/>
+        <Tab.Screen name ="Reminders" component = {ReminderScreen}/>
+        <Tab.Screen name ="Health" component = {HealthScreen}/>
       </Tab.Navigator>
      </NavigationContainer>
    );

@@ -1,9 +1,10 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { Text, ScrollView, NativeModules } from 'react-native';
-import { SettingsToggle } from '../assets/components/settingspagecomp/SettingToggle'
-import SettingsHeader from '../assets/components/settingspagecomp/SettingHeader'
-import DropDown from '../assets/components/DropDown'
-import Button from '../assets/components/Button'
+import { SettingsToggle } from '../assets/components/settingspagecomp/SettingToggle';
+import SettingsHeader from '../assets/components/settingspagecomp/SettingHeader';
+import DropDown from '../assets/components/DropDown';
+import Button from '../assets/components/Button';
 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from '../styles';

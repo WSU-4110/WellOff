@@ -19,8 +19,8 @@ export default function CircularGraph() {
       
         return (
       
-          <View style={styleSheet.MainContainer}>
-      
+          <View style={[styleSheet.MainContainer, styleSheet.elevation]}>
+      <View>
             <ProgressChart
               data={data}
               width={ screenWidth - 15 }
@@ -36,7 +36,7 @@ export default function CircularGraph() {
                 borderRadius: 15,
               }}
             />
-      
+      </View>
           </View>
         );
       }
@@ -47,5 +47,9 @@ export default function CircularGraph() {
           flex: 1,
           alignItems: 'center',
           justifyContent: 'center'
-        }
+        },
+        elevation: {
+          shadowColor: '#220033',
+          elevation: 80,
+        },
       });

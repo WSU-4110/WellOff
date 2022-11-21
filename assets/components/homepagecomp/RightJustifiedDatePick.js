@@ -35,10 +35,12 @@ export default class RightJustifiedDatePick extends Component {
 
       render(){
         return (
-          <View style={styles.Container}>
+          <View>
+          <View>
             <TouchableOpacity onPress={this.showPicker}>
             <RightJustifiedItems/>
             </TouchableOpacity>
+            </View>
 
             <DateTimePicker
             isVisible={this.state.isVisible}
@@ -66,6 +68,14 @@ const styles = StyleSheet.create({
     top: 1,
     justifyContent: 'center',
   },
+  card: {  
+    backgroundColor: 'white',  
+    borderRadius: 8,  
+    paddingVertical: 20,  
+    paddingHorizontal: 25,  
+    width: '100%',  
+    marginVertical: 10,  
+  },  
   TimeSample1: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -108,5 +118,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F5FCFF',
     margin: 10,
+  },
+  elevation: {
+    shadowColor: '#220033',
+    elevation: 40,
   },
 });

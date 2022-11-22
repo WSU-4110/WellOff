@@ -6,16 +6,16 @@ export default function LeftJustifiedItems() {
     return (
 <View style={styles.container}>
     <View style={styles.space} />
-    <View style = {styles.TimeContainer}>
-    <Text style={styles.TimeSample1}>Steps Taken <Text style={styles. SampleContent}>  3578/5000</Text> </Text>
+    <View style = {[styles.TimeContainer, styles.elevation]}>
+    <Text style={styles.TimeSample1}>  Steps Taken <Text style={styles. SampleContent}>  3578/5000</Text> </Text>
     </View>
     <View style={styles.space} />
-    <View style={styles.TimeContainer}>
-    <Text style={styles.TimeSample2}>Screen time <Text style={styles.SampleContent}>  4h/3h</Text></Text>
+    <View style={[styles.TimeContainer, styles.elevation]}>
+    <Text style={styles.TimeSample2}>  Screen time <Text style={styles.SampleContent}>  4h/3h</Text></Text>
     </View>
     <View style={styles.space} />
-    <View style={styles.TimeContainer}>
-    <Text style={styles.TimeSample3}>Sleep <Text style={styles. SampleContent}>  6h/8h</Text></Text>
+    <View style={[styles.TimeContainer, styles.elevation]}>
+    <Text style={styles.TimeSample3}>  Sleep <Text style={styles. SampleContent}>  6h/8h</Text></Text>
     </View>
     </View>
   );
@@ -24,9 +24,10 @@ export default function LeftJustifiedItems() {
 const styles = StyleSheet.create({
   TimeContainer: {
     padding: 3,
-    backgroundColor: 'azure',
+    backgroundColor: '#E6EEFF',
     height: 28,
     width: 150,
+    borderRadius: 3,
   },
   TimeSample1: {
     alignItems: 'center',
@@ -50,7 +51,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 11,
     fontWeight: 'bold',
-    color: '#4169e1',
+    color: '#6666FF',
+    textShadowColor: 'rgba(255,255,255, 0.9)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 3,
   },
   container: {
   position: 'absolute',
@@ -61,5 +65,9 @@ const styles = StyleSheet.create({
   },
   space: {
     padding: 4,
+  },
+  elevation: {
+    shadowColor: '#33002A',
+    elevation: 25,
   },
 });

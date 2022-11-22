@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable no-trailing-spaces */
+
 import {React, Component, useState, useEffect } from 'react';
 import {Text, View, StyleSheet, TouchableHighlight, TouchableOpacity, Platform, Button} from 'react-native';
 import {DateTimePicker} from '@react-native-modal-datetime-picker';
@@ -34,7 +36,7 @@ export default function RightJustifiedItems(){
     return (
     <View styles={styles.container}>
     <View style={styles.space} />
-    <View style = {styles.TimeContainer}>
+    <View style = {[styles.TimeContainer, styles.elevation]}>
     <Text style={styles.TimeSample1}>{time}</Text>
     <Text style={styles.TimeSample2}>{date}</Text>
     </View>
@@ -48,12 +50,13 @@ export default function RightJustifiedItems(){
 const styles = StyleSheet.create({
   TimeContainer: {
     padding: 3,
-    backgroundColor: 'azure',
+    backgroundColor: '#E6EEFF',
     height: 45,
     width: 150,
     left: 235,
     top: 1,
     justifyContent: 'center',
+    borderRadius: 3,
   },
   TimeSample1: {
     alignItems: 'center',
@@ -93,9 +96,21 @@ const styles = StyleSheet.create({
   space: {
     padding: 4,
   },
+  card: {  
+    backgroundColor: 'azure',  
+    borderRadius: 8,  
+    paddingVertical: 20,  
+    paddingHorizontal: 10,  
+    width: '100%',  
+    marginVertical: 10,  
+  },  
   dateContainer: {
     flex: 1,
     backgroundColor: '#F5FCFF',
     margin: 10,
+  },
+  elevation: {
+    shadowColor: '#33002A',
+    elevation: 25,
   },
 });

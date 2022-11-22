@@ -2,36 +2,40 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import styles from '../styles'
 
-const MyPlanScreen = () => {
+const Plan = createNativeStackNavigator();
+
+function MyPlanScreen( {navigation}) {
     return (
         <View style={style.container}>
           <View style={style.header}>
             <View style={style.headerContent}>
                 <Image style={style.avatar}
                   source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
-                <Text style={style.name}>Matt Meyer </Text>
+                <Text style={style.name}>Matt Meyer</Text>
             </View>
           </View>
+
           <View style={styles.body}>
-            <TouchableOpacity style={styles.buttonContainer}>
+            <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Profile')}>
                 <Text>Edit Profile</Text>  
               </TouchableOpacity>     
 
-              <TouchableOpacity style={styles.buttonContainer}>
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Preferences')}>
                 <Text>Edit Preferences</Text> 
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.buttonContainer}>
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Health')}>
                 <Text>Health Stats</Text> 
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.buttonContainer}>
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Notification')}>
                 <Text>Edit Notifications</Text> 
               </TouchableOpacity>
           </View>
+
         </View>
   );
 };

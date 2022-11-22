@@ -65,5 +65,3 @@ buck-out/
 
 # VSCode
 .vscode/.react/*
-.vscode/.react/debuggerWorker.js
-yarn.lock

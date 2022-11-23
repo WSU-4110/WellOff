@@ -15,34 +15,34 @@ import WelcomeText from '../assets/components/homepagecomp/WelcomeText';
 const HomeScreen = () => {
     return (
       <Background from="rgb(238, 230, 255)" to="rgb(77,136,255)">
-      <ScrollView>
-      <View style={styles.container} >
-      <LeftJustifiedItems />
-      <View style={styles.space} />
-      <RightJustifiedDatePick />
-      <View style={styles.space} />
-      <View style={styles.space} />
-      <View style={styles.pngspace3} />
-      <WelcomeText/>
-      <View style={styles.pngspace3} />
-      <View style={styles.elevation}>
-      <CircularGraph/>
-      </View>
-      <View style={styles.pngspace3} />
-      <View style={styles.space} />
-      <View style={styles.elevation}>
-      <TimeModule />
-      </View>
-      <View style={styles.pngspace3} />
-      <HighlightReplace/>
-      <View style={styles.pngspace3} />
-      <Highlights />
-      <View style={styles.pngspace3} />
-      <View style={styles.space} />
-      <View style={styles.space} />
-    </View>
-    </ScrollView>
-    </Background>
+        <ScrollView>
+          <View style={styles.container} >
+            <LeftJustifiedItems />
+            <View style={styles.space} />
+            <RightJustifiedDatePick />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.pngspace3} />
+            <WelcomeText />
+            <View style={styles.pngspace3} />
+            <View style={styles.elevation}>
+              <CircularGraph />
+            </View>
+            <View style={styles.pngspace3} />
+            <View style={styles.space} />
+            <View style={styles.elevation}>
+              <TimeModule />
+            </View>
+            <View style={styles.pngspace3} />
+            <HighlightReplace />
+            <View style={styles.pngspace3} />
+            <Highlights />
+            <View style={styles.pngspace3} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+          </View>
+        </ScrollView>
+      </Background>
     );
 };
 

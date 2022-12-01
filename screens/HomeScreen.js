@@ -14,7 +14,6 @@ import WelcomeText from '../assets/components/homepagecomp/WelcomeText';
 
 const HomeScreen = () => {
     return (
-      <Background from="rgb(238, 230, 255)" to="rgb(77,136,255)">
       <ScrollView>
       <View style={styles.container} >
       <LeftJustifiedItems />
@@ -42,7 +41,6 @@ const HomeScreen = () => {
       <View style={styles.space} />
     </View>
     </ScrollView>
-    </Background>
     );
 };
 

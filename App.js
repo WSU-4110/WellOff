@@ -33,11 +33,7 @@ function HomeTabs() {
           iconName = focused ? 'ios-home' : 'ios-home-outline';
         } else if (route.name === 'Settings') {
           iconName = focused ? 'ios-home' : 'ios-home-outline';
-        } else if (route.name === 'Reminders') {
-          iconName = focused ? 'ios-home' : 'ios-home-outline';
-        } else if (route.name === 'Health') {
-          iconName = focused ? 'ios-home' : 'ios-home-outline';
-        }
+        } 
         return <Ionic name={iconName} size={size} color={color} />;
       },
     })}>
@@ -51,14 +47,12 @@ function HomeTabs() {
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={({route}) => ({      
-        headerShown: true,
-        })}>
-        <Stack.Screen name="Home" component={HomeTabs} />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
-        <Stack.Screen name="Preferences" component={PreferencesScreen} />
-        <Stack.Screen name="Health" component={HealthScreen} />
-        <Stack.Screen name="Notification" component={RemindersScreen} />
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeTabs} options={{headerShown: false}}/>
+        <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: true}}/>
+        <Stack.Screen name="Preferences" component={PreferencesScreen} options={{headerShown: true}}/>
+        <Stack.Screen name="Health" component={HealthScreen} options={{headerShown: true}}/>
+        <Stack.Screen name="Notification" component={RemindersScreen} options={{headerShown: true}}/>
 
       </Stack.Navigator>
     </NavigationContainer>

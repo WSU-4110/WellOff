@@ -10,9 +10,9 @@ export var sleepGoal = 8;
 export var currentUser = 'Farid';
 export var currentPicture = "https://bootdey.com/img/Content/avatar/avatar6.png";
 
-export var stepsGraph = steps * (0.0001);
-export var screenGraph = screen * (0.1);
-export var sleepGraph = sleep * (0.1);
+export var stepsGraph = steps/stepsGoal;
+export var screenGraph = screen/screenGoal;
+export var sleepGraph = sleep/sleepGoal;
 
 export function setNumber(inp){
     ({screen} = inp);

@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import GoalReport from '../../assets/components/myplanpageomp/healthstatpagecomp/GoalReport'
-import StepsReport from '../../assets/components/myplanpageomp/healthstatpagecomp/StepsReport'
-import ScreenReport from '../../assets/components/myplanpageomp/healthstatpagecomp/ScreenReport'
-import WeeklyReport from '../../assets/components/myplanpageomp/healthstatpagecomp/WeeklyReport'
+import GoalReport from '../../assets/components/healthstatpagecomp/GoalReport'
+import StepsReport from '../../assets/components/healthstatpagecomp/StepsReport'
+import ScreenReport from '../../assets/components/healthstatpagecomp/ScreenReport'
+import WeeklyReport from '../../assets/components/healthstatpagecomp/WeeklyReport'
 
 const HealthScreen = () => {
     return (

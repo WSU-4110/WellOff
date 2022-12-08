@@ -6,6 +6,12 @@ import SettingsHeader from '../assets/components/settingspagecomp/SettingHeader'
 import DropDown from '../assets/components/DropDown';
 import Button from '../assets/components/Button';
 
+import Notification from '../assets/components/settingspagecomp/Notifications';
+import WeeklyReport from '../assets/components/settingspagecomp/WeeklyReport';
+import Steps from '../assets/components/settingspagecomp/Steps'; 
+import Hours from '../assets/components/settingspagecomp/Hours';
+import NightMode from '../assets/components/settingspagecomp/NightMode';
+
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from '../styles';
 
@@ -38,16 +44,12 @@ export default function SettingsScreen() {
     return (
         <SafeAreaView>
             <ScrollView>
-                <SettingsHeader name="Appearance">
-                    <SettingsToggle name="Dark Mode" value={false} />
-                    <DropDown name="Themes: "
-                        data={[
-                            { key: '1', value: 'Blue' },
-                            { key: '2', value: 'Green' },
-                            { key: '3', value: 'Red' },
-                            { key: '4', value: 'Pink' },
-                        ]} />
-                </SettingsHeader>
+                <SettingsHeader name="Notifications"></SettingsHeader>
+                <Notification/>
+                <WeeklyReport/>
+                <Steps/>
+                <Hours/>
+                <NightMode/>
                 <SettingsHeader name="Permissions">
                     <SettingsToggle name="Health" value={googleFitStatus}/>
                     <SettingsToggle name="Location" />

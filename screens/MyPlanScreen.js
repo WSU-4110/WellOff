@@ -30,10 +30,6 @@ function MyPlanScreen( {navigation}) {
               <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Health')}>
                 <Text>Health Stats</Text> 
               </TouchableOpacity>
-
-              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Notification')}>
-                <Text>Edit Notifications</Text> 
-              </TouchableOpacity>
           </View>
 
         </View>

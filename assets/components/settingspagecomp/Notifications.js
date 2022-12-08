@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Switch,} from 'react-native';
+import style from '../../../styles';
 
 export default function Notification(){
     const [switchValue, setswitchValue] = useState(false);
@@ -25,14 +26,14 @@ export default function Notification(){
 const styles = StyleSheet.create({
     text: {
         color: '#05445E', 
-        fontSize: 20, 
-        paddingTop: 40,
-        paddingLeft: 20,
-        fontWeight: 'bold',
+        fontSize: 15, 
+        paddingTop: 30,
+        paddingLeft: 30,
     },
 
     switch: {
         alignItems: 'flex-end',
-        paddingTop: 80,
+        paddingTop: 50,
+        paddingLeft: 150
     }
 });

@@ -9,7 +9,6 @@ import HomeScreen from './screens/HomeScreen';
 import MyPlanScreen from './screens/MyPlanScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import HealthScreen from './screens/MyPlanScreens/HealthScreen';
-import RemindersScreen from './screens/MyPlanScreens/RemindersScreen'
 import ProfileScreen from './screens/MyPlanScreens/EditProfile'
 import PreferencesScreen from './screens/MyPlanScreens/EditPreferences'
 
@@ -52,7 +51,6 @@ const App = () => {
         <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: true}}/>
         <Stack.Screen name="Preferences" component={PreferencesScreen} options={{headerShown: true}}/>
         <Stack.Screen name="Health" component={HealthScreen} options={{headerShown: true}}/>
-        <Stack.Screen name="Notification" component={RemindersScreen} options={{headerShown: true}}/>
 
       </Stack.Navigator>
     </NavigationContainer>

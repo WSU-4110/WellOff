@@ -87,7 +87,7 @@ function GetGoogleFitStatus(){
  * Matthew Meyer
  * 
  */
-function getDailySteps(){
+function GetDailySteps(){
     return 0;
 };
 
@@ -96,7 +96,7 @@ function getDailySteps(){
  * Matthew Meyer
  * 
  */
-function getWeeklySteps(){
+function GetWeeklySteps(){
     return 0;
 };
 
@@ -105,7 +105,7 @@ function getWeeklySteps(){
  * Matthew Meyer
  * 
  */
-const themes = {
+const Themes = {
     "Blue":["#05445E", "#189AB4", "#75E6DA", "#D4F1F4"]
 };
 
@@ -138,8 +138,8 @@ export {
     ToggleGoogleFitStatus,
     GetGoogleFitStatus,
     
-    getDailySteps, 
-    getWeeklySteps,
+    GetDailySteps, 
+    GetWeeklySteps,
 
     Themes,
     GetTheme,

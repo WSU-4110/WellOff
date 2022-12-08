@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
     switch: {
         alignItems: 'flex-end',
         paddingTop: 50,
-        paddingLeft: 150
+        paddingLeft: 200
     }
 });

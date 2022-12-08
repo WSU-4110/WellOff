@@ -6,7 +6,7 @@ export default function HighlightReplace() {
     return (
 <View style={styles.container}>
     <View style={styles.space} />
-        <Text style={styles.HighlightsSubItem2}>You took <Text style={styles.boldtext}>500</Text> more steps than you did yesterday.</Text>
+        <Text style={styles.HighlightsSubItem2}>You took <Text style={styles.boldtext}>374</Text> more steps than you did yesterday.</Text>
     </View>
   );
 }

@@ -1,12 +1,14 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
 import GoalReport from '../../assets/components/healthstatpagecomp/GoalReport'
 import StepsReport from '../../assets/components/healthstatpagecomp/StepsReport'
 import ScreenReport from '../../assets/components/healthstatpagecomp/ScreenReport'
 import WeeklyReport from '../../assets/components/healthstatpagecomp/WeeklyReport'
+import SleepReport from '../../assets/components/healthstatpagecomp/SleepReport';
 
 const HealthScreen = () => {
     return (
+        <ScrollView>
         <View style = {styles.container}>
             <StepsReport/>
             <View style={styles.space} />
@@ -14,7 +16,7 @@ const HealthScreen = () => {
             <ScreenReport/>
             <View style={styles.space} />
             <View style={styles.space} />
-            <GoalReport/>
+            <SleepReport />
             <View style={styles.space} />
             <View style={styles.space} />
             <WeeklyReport/>
@@ -36,7 +38,21 @@ const HealthScreen = () => {
             <View style={styles.space} />
             <View style={styles.space} />
             <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+
         </View>
+        </ScrollView>
     )
 };
 

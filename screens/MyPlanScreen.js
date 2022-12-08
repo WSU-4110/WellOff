@@ -4,6 +4,8 @@ import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import styles from '../styles'
+import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser, currentPicture} from '../assets/components/homepagecomp/HomePageModel';
+
 
 const Plan = createNativeStackNavigator();
 
@@ -14,7 +16,7 @@ function MyPlanScreen( {navigation}) {
             <View style={style.headerContent}>
                 <Image style={style.avatar}
                   source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
-                <Text style={style.name}>Matt Meyer</Text>
+                <Text style={style.name}>{currentUser}</Text>
             </View>
           </View>
 
@@ -22,9 +24,9 @@ function MyPlanScreen( {navigation}) {
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Profile')}>
                 <Text>Edit Profile</Text>  
               </TouchableOpacity>     
-
-              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Preferences')}>
-                <Text>Edit Preferences</Text> 
+              
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Goals')}>
+                <Text>Edit Goals</Text> 
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Health')}>

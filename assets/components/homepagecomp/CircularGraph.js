@@ -1,5 +1,4 @@
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable prettier/prettier */
+/* eslint-disable no-trailing-spaces *//* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, StyleSheet, Text, Dimensions } from 'react-native';
 import { ProgressChart } from "react-native-chart-kit";
@@ -18,7 +17,6 @@ export default function CircularGraph() {
       };
       
         return (
-      
           <View style={[styleSheet.MainContainer, styleSheet.elevation]}>
       <View>
             <ProgressChart

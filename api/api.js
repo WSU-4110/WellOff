@@ -46,23 +46,21 @@ currTheme = "Blue";
  * Matthew Meyer
  * 
  * @param { Boolean } value True = enabled; False = disabled.
+ * @returns A boolean value whether it was able to enable or disable google fit.
  */
 function SetGoogleFitStatus(value){
     if (value) {
         GoogleFit.authorize(options).then(authResult => {
             if (authResult.success) {
-                dispatch("AUTH_SUCCESS");
-            } else {
-                dispatch("AUTH_DENIED", authResult.message);
+                return true;
             }
         })
             .catch(() => {
-                dispatch("AUTH_ERROR");
+                //handle error later :)
             })
     }
-    else{
-        //write something
-    }
+    
+    return false; //default case
 };
 
 function ToggleGoogleFitStatus(){

@@ -2,24 +2,24 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import SelectList from 'react-native-dropdown-select-list';
 
-export default function Steps(){
+export default function Hours(){
     const [selected, setSelected] = React.useState("");
   
     const data = [
-        {key:'1', value:'Stop Tracking Steps'},
-        {key:'2', value:'500 Steps'},
-        {key:'3', value:'1000 Steps'},
-        {key:'4', value:'2000 Steps'},
+        {key:'1', value:'Stop Tracking Hours'},
+        {key:'2', value:'1 Hours'},
+        {key:'3', value:'2 Hours'},
+        {key:'4', value:'4 Hours'},
     ];
 
     return(
             <View>
-                <Text style = {styles.text}>Notify From Steps Remaining:</Text>
+                <Text style = {styles.text}>Notify From Hours Remaining:</Text>
                 <SelectList style = {styles.choices}
                     setSelected={setSelected} 
                     data={data}  
                     search={false} 
-                    defaultOption={{key:'1', value:'Stop Tracking Steps'}}
+                    defaultOption={{key:'1', value:'Stop Tracking Hours'}}
                     dropdownTextStyles = {styles.choices}
                     inputStyles = {styles.choices}
                 />
@@ -29,16 +29,16 @@ export default function Steps(){
 
 const styles = StyleSheet.create({
     text: {
-        color: 'darkslateblue', 
-        fontSize: 20, 
+        color: '#05445E', 
+        fontSize: 20,
+        paddingTop: 60,
         paddingLeft: 20,
         fontWeight: 'bold',
-        paddingTop: 60,
-    },
+        },
 
     choices: {
-        color: 'darkslateblue',
+        color: '#05445E',
         fontSize: 15,
-        paddingLeft: 140
+        paddingLeft: 150,
     }
 });

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Switch,} from 'react-native';
 
-export default function WeeklyReport(){
+export default function Notification(){
     const [switchValue, setswitchValue] = useState(false);
 
     const toggleSwitch = (value) =>{
@@ -11,7 +11,7 @@ export default function WeeklyReport(){
     return(
             <View style = {{flexDirection: 'row'}}>
                 <Text style = {styles.text}>
-                    {switchValue ? 'Disable Weekly Progess Report' : 'Enable Weekly Progress Report'}
+                    {switchValue ? 'Disable Notifications' : 'Enable Notifications'}
                 </Text>
 
                 <Switch style = {styles.switch}
@@ -24,14 +24,15 @@ export default function WeeklyReport(){
 
 const styles = StyleSheet.create({
     text: {
-        color: 'darkslateblue', 
+        color: '#05445E', 
         fontSize: 20, 
-        // paddingTop: 80,
+        paddingTop: 40,
         paddingLeft: 20,
         fontWeight: 'bold',
     },
 
     switch: {
-       alignItems: 'flex-end',
+        alignItems: 'flex-end',
+        paddingTop: 80,
     }
 });

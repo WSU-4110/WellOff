@@ -29,7 +29,7 @@ export default function NightMode(){
 
 const styles = StyleSheet.create({
     text: {
-        color: 'darkslateblue', 
+        color: '#05445E', 
         fontSize: 20,
         paddingTop: 60,
         paddingLeft: 20,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         },
 
     choices: {
-        color: 'darkslateblue',
+        color: '#05445E',
         fontSize: 15,
         paddingLeft: 100,
     }

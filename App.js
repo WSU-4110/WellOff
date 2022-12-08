@@ -27,10 +27,9 @@ function HomeTabs() {
       headerShown: false,
       tabBarIcon: ({focused, color, size}) => {
         let iconName;
-        //if (route.name === 'Home') {
-        //  iconName = focused ? 'ios-home' : 'ios-home-outline';
-        //} else 
-        if (route.name === 'My Plan') {
+        if (route.name === 'Home') {
+          iconName = focused ? 'ios-home' : 'ios-home-outline';
+        } else if (route.name === 'My Plan') {
           iconName = focused ? 'ios-home' : 'ios-home-outline';
         } else if (route.name === 'Settings') {
           iconName = focused ? 'ios-home' : 'ios-home-outline';
@@ -38,7 +37,7 @@ function HomeTabs() {
         return <Ionic name={iconName} size={size} color={color} />;
       },
     })}>
-      {/* <Tab.Screen name="Home" component={HomeScreen} /> */}
+      <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="My Plan" component={MyPlanScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>

@@ -7,7 +7,7 @@ import {DateTimePicker} from '@react-native-modal-datetime-picker';
 import moment from 'moment';
 import { render } from 'react-native/Libraries/Renderer/implementations/ReactNativeRenderer-prod';
 import RightJustifiedDatePick from './RightJustifiedDatePick';
-
+import { app } from '../../../Firebase/firebase';
 export default function RightJustifiedItems(){  
 
     const [time, setTime] = useState(null);

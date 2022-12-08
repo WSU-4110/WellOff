@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
 import GoalReport from '../../assets/components/healthstatpagecomp/GoalReport'
 import StepsReport from '../../assets/components/healthstatpagecomp/StepsReport'
 import ScreenReport from '../../assets/components/healthstatpagecomp/ScreenReport'
@@ -7,6 +7,7 @@ import WeeklyReport from '../../assets/components/healthstatpagecomp/WeeklyRepor
 
 const HealthScreen = () => {
     return (
+        <ScrollView>
         <View style = {styles.container}>
             <StepsReport/>
             <View style={styles.space} />
@@ -50,6 +51,7 @@ const HealthScreen = () => {
             <View style={styles.space} />
 
         </View>
+        </ScrollView>
     )
 };
 

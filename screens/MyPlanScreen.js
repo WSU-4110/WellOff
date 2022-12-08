@@ -26,6 +26,10 @@ function MyPlanScreen( {navigation}) {
               <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Preferences')}>
                 <Text>Edit Preferences</Text> 
               </TouchableOpacity>
+              
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Goals')}>
+                <Text>Edit Goals</Text> 
+              </TouchableOpacity>
 
               <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('Health')}>
                 <Text>Health Stats</Text> 

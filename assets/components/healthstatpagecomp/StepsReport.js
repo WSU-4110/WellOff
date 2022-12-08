@@ -12,13 +12,17 @@ export default function StepsReport() {
 }
 
 const styles = StyleSheet.create({
+
   HeaderContainer: {
     padding: 5,
     justifyContent: 'center',
     backgroundColor: '#f0ffff',
     borderColor: '#191970',
     width: 380,
+    marginLeft: 10,
+    marginTop:20
   },
+
   HeaderItem: {
     justifyContent: 'center',
     textAlign: 'center',
@@ -29,6 +33,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
+
   HighlightsItem: {
     justifyContent: 'center',
     color: '#191970',
@@ -37,6 +42,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
   },
+
   HighlightsSubItem: {
     justifyContent: 'center',
     margin: 10,

@@ -36,6 +36,19 @@ const HealthScreen = () => {
             <View style={styles.space} />
             <View style={styles.space} />
             <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+            <View style={styles.space} />
+
         </View>
     )
 };

@@ -9,8 +9,9 @@ import HomeScreen from './screens/HomeScreen';
 import MyPlanScreen from './screens/MyPlanScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import HealthScreen from './screens/MyPlanScreens/HealthScreen';
-import ProfileScreen from './screens/MyPlanScreens/EditProfile'
-import PreferencesScreen from './screens/MyPlanScreens/EditPreferences'
+import ProfileScreen from './screens/MyPlanScreens/EditProfile';
+import PreferencesScreen from './screens/MyPlanScreens/EditPreferences';
+import GoalScreen from './screens/MyPlanScreens/GoalScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -50,6 +51,7 @@ const App = () => {
         <Stack.Screen name="Home" component={HomeTabs} options={{headerShown: false}}/>
         <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: true}}/>
         <Stack.Screen name="Preferences" component={PreferencesScreen} options={{headerShown: true}}/>
+        <Stack.Screen name="Goals" component={GoalScreen} options={{headerShown: true}}/>
         <Stack.Screen name="Health" component={HealthScreen} options={{headerShown: true}}/>
 
       </Stack.Navigator>

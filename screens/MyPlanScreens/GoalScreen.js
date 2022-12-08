@@ -1,58 +1,25 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React, { useState } from 'react';
+import { ScrollView, Text, TextInput, TouchableOpacity } from 'react-native';
+import GoalHeader from '../../assets/components/goalpagecomp/GoalHeader';
+import DailySteps from '../../assets/components/goalpagecomp/DailySteps';
+import WeeklyScreentime from '../../assets/components/goalpagecomp/WeeklyScreentime';
+import WeeklySteps from '../../assets/components/goalpagecomp/WeeklySteps';
+import DailyScreentime from '../../assets/components/goalpagecomp/DailyScreentime';
 
 const GoalScreen = () => {
-    return (
-        <View style = {styles.container}>
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-            <View style={styles.space} />
-        </View>
-    )
+  const [number, setNumber] = React.useState(500);
+  const [inputValue, setInputValue] = React.useState('');
+
+  return (
+    <ScrollView>
+
+      <DailySteps/>
+      <DailyScreentime/>
+      <WeeklySteps/>
+      <WeeklyScreentime/>
+      
+    </ScrollView>
+  );
 };
-
-const styles = StyleSheet.create({
-    container: {
-      backgroundColor: '#D4F1F4',
-      justifyContent: 'center'
-    },
-
-    space: {
-        padding: 4,
-    }
-});
 
 export default GoalScreen;

@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: '600',
         backgroundColor: "#05445E",
-        paddingLeft: 140
     },
     switch: {
         alignItems: 'flex-end',

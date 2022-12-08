@@ -142,7 +142,7 @@ function SetTheme(themeName){
  * @returns True if it matches, false if it doesnt.
  */
 function Login(user, password){
-    if (user == "mattyb"){
+    if (user == "mattyb@gmail.com"){
         if (password == "rocks"){
             return true;
         }

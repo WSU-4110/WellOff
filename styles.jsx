@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     },
     sectionContainer: {
         marginTop: 16,
-        paddingHorizontal: 24,
         marginBottom: 16,
     },
     sectionTitle: {
@@ -45,7 +44,7 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: '600',
         backgroundColor: "#05445E",
-        paddingLeft: 5
+        paddingLeft: 15
     },
     switch: {
         alignItems: 'flex-end',

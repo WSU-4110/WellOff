@@ -2,24 +2,24 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import SelectList from 'react-native-dropdown-select-list';
 
-export default function NightMode(){
+export default function Hours(){
     const [selected, setSelected] = React.useState("");
   
     const data = [
-        {key:'1', value:'Notifications Turned Off'},
-        {key:'2', value:'Turned Off Until 7:00am'},
-        {key:'3', value:'Turned Off Until 9:00am'},
-        {key:'4', value:'Turned Off Until 11:00am'},
+        {key:'1', value:'Stop Tracking Hours'},
+        {key:'2', value:'1 Hours'},
+        {key:'3', value:'2 Hours'},
+        {key:'4', value:'4 Hours'},
     ];
 
     return(
             <View>
-                <Text style = {styles.text}>Night-Mode</Text>
+                <Text style = {styles.text}>Notify From Hours Remaining:</Text>
                 <SelectList style = {styles.choices}
                     setSelected={setSelected} 
                     data={data}  
                     search={false} 
-                    defaultOption={{key:'1', value:'Notifications Turned Off'}}
+                    defaultOption={{key:'1', value:'Stop Tracking Hours'}}
                     dropdownTextStyles = {styles.choices}
                     inputStyles = {styles.choices}
                 />
@@ -30,15 +30,14 @@ export default function NightMode(){
 const styles = StyleSheet.create({
     text: {
         color: '#05445E', 
-        fontSize: 20,
-        paddingTop: 60,
-        paddingLeft: 20,
-        fontWeight: 'bold',
-        },
+        fontSize: 15, 
+        paddingLeft: 30,
+        paddingTop: 30,
+    },
 
     choices: {
         color: '#05445E',
         fontSize: 15,
-        paddingLeft: 100,
+        paddingLeft: 135,
     }
 });

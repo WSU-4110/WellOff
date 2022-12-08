@@ -28,6 +28,7 @@ export function setStepGoal(inp){
   (stepsGoal = inp);
 }
 
+
 export function setSleepGoal(inp){
   (sleepGoal = inp);
 }

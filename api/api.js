@@ -1,4 +1,4 @@
-import { GoogleFit } from "react-native-google-fit";
+import { BucketUnit, GoogleFit, Scopes } from "react-native-google-fit";
 
 /** How to use this API
  *  -   This API is just a middle connector for a backend that may or
@@ -31,7 +31,7 @@ import { GoogleFit } from "react-native-google-fit";
  const DailyStepsOPT = {
     startDate: new Date().toISOString(), // required ISO8601Timestamp
     endDate: new Date().toISOString(), // required ISO8601Timestamp
-    bucketUnit: BucketUnit.DAY, // optional - default "DAY". Valid values: "NANOSECOND" | "MICROSECOND" | "MILLISECOND" | "SECOND" | "MINUTE" | "HOUR" | "DAY"
+    BucketUnit: BucketUnit.DAY, // optional - default "DAY". Valid values: "NANOSECOND" | "MICROSECOND" | "MILLISECOND" | "SECOND" | "MINUTE" | "HOUR" | "DAY"
     bucketInterval: 1, // optional - default 1. 
 };
 
@@ -115,7 +115,7 @@ const Themes = {
  * 
  */
 function GetTheme() {
-    return themes.Blue; //change to get programatically from the theme string
+    return "Blue"; //change to get programatically from the theme string
 };
 
 /**The themes available to the app

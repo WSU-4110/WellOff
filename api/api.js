@@ -41,10 +41,11 @@ currTheme = "Blue";
 
 //--START PUBLIC FUNCTIONS--
 
-/**Set the permissions on the Google Fit API
+/**Set the permissions on the Google Fit API.
  * Contributors:
  * Matthew Meyer
  * 
+ * @param { Boolean } value True = enabled; False = disabled.
  */
 function SetGoogleFitStatus(value){
     if (value) {
@@ -77,30 +78,33 @@ function ToggleGoogleFitStatus(){
  * Contributors:
  * Matthew Meyer
  * 
+ * @returns A boolean value for the status of Google fit.
  */
 function GetGoogleFitStatus(){
     return true;
 };
 
-/**Get the daily step count from the Google Fit API
+/**Get the daily step count from the Google Fit API.
  * Contributors:
  * Matthew Meyer
  * 
+ * @returns A numerical value of the daily steps.
  */
 function GetDailySteps(){
     return 0;
 };
 
-/**Get the daily step count from the Google Fit API
+/**Get the daily step count from the Google Fit API.
  * Contributors:
  * Matthew Meyer
  * 
+ * @returns A numerical value of the weekly steps.
  */
 function GetWeeklySteps(){
     return 0;
 };
 
-/**The themes available to the app
+/**The default themes available to the app.
  * Contributers:
  * Matthew Meyer
  * 
@@ -109,25 +113,45 @@ const Themes = {
     "Blue":["#05445E", "#189AB4", "#75E6DA", "#D4F1F4"]
 };
 
-/**Get the theme the app is using
+/**Retrieve the theme the app is using.
  * Contributers:
  * Matthew Meyer
  * 
+ * @returns The theme name.
  */
 function GetTheme() {
     return "Blue"; //change to get programatically from the theme string
 };
 
-/**The themes available to the app
+/**Set the theme from the available app defaults with variable "Themes"
  * Contributers:
  * Matthew Meyer
  * 
+ * @param { String } themeName
  */
 function SetTheme(themeName){
     if (true){ //put theme name here. We can use hardcoded theme names
         currTheme = themeName;
     }
 };
+
+/**Checks to see if the username and password match what is stored. 
+ * Contributers:
+ * Matthew Meyer
+ * 
+ * @param {String} user 
+ * @param {String} password 
+ * @returns True if it matches, false if it doesnt.
+ */
+function Login(user, password){
+    if (user == "mattyb"){
+        if (password == "rocks"){
+            return true;
+        }
+    }
+
+    return false; //defualt case
+}
 
 //--END FUNCTIONS--
 

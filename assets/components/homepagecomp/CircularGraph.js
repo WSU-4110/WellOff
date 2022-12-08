@@ -2,18 +2,21 @@
 import React from 'react';
 import { View, StyleSheet, Text, Dimensions } from 'react-native';
 import { ProgressChart } from "react-native-chart-kit";
+import { stepsGraph, screenGraph, sleepGraph } from './HomePageModel';
 
 
 
 const screenWidth = Dimensions.get("window").width;
 
 
-
+var steps = 0.5;
+var screen = 0.3;
+var sleep = 0.2;
 export default function CircularGraph() {
  
     const data = {
         labels: ["Steps", "Screen", "Sleep"], // optional
-        data: [0.2, 0.5, 0.8]
+        data: [stepsGraph, screenGraph, sleepGraph]//
       };
       
         return (

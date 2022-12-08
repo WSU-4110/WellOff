@@ -9,9 +9,9 @@ import HomeScreen from './screens/HomeScreen';
 import MyPlanScreen from './screens/MyPlanScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import HealthScreen from './screens/MyPlanScreens/HealthScreen';
-import RemindersScreen from './screens/MyPlanScreens/RemindersScreen'
-import ProfileScreen from './screens/MyPlanScreens/EditProfile'
-import PreferencesScreen from './screens/MyPlanScreens/EditPreferences'
+import ProfileScreen from './screens/MyPlanScreens/EditProfile';
+import PreferencesScreen from './screens/MyPlanScreens/EditPreferences';
+import GoalScreen from './screens/MyPlanScreens/GoalScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -27,10 +27,9 @@ function HomeTabs() {
       headerShown: false,
       tabBarIcon: ({focused, color, size}) => {
         let iconName;
-        //if (route.name === 'Home') {
-        //  iconName = focused ? 'ios-home' : 'ios-home-outline';
-        //} else 
-        if (route.name === 'My Plan') {
+        if (route.name === 'Home') {
+          iconName = focused ? 'ios-home' : 'ios-home-outline';
+        } else if (route.name === 'My Plan') {
           iconName = focused ? 'ios-home' : 'ios-home-outline';
         } else if (route.name === 'Settings') {
           iconName = focused ? 'ios-home' : 'ios-home-outline';
@@ -38,7 +37,7 @@ function HomeTabs() {
         return <Ionic name={iconName} size={size} color={color} />;
       },
     })}>
-      {/* <Tab.Screen name="Home" component={HomeScreen} /> */}
+      <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="My Plan" component={MyPlanScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
@@ -52,8 +51,8 @@ const App = () => {
         <Stack.Screen name="Home" component={HomeTabs} options={{headerShown: false}}/>
         <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: true}}/>
         <Stack.Screen name="Preferences" component={PreferencesScreen} options={{headerShown: true}}/>
+        <Stack.Screen name="Goals" component={GoalScreen} options={{headerShown: true}}/>
         <Stack.Screen name="Health" component={HealthScreen} options={{headerShown: true}}/>
-        <Stack.Screen name="Notification" component={RemindersScreen} options={{headerShown: true}}/>
 
       </Stack.Navigator>
     </NavigationContainer>

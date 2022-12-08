@@ -1,12 +1,14 @@
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-export default function StepsReport() {
+export default function GoalReport() {
   return (
     <View style={styles.HeaderContainer}>
-      <Text style={styles.HeaderItem}>Screen Time</Text>
-      <Text style={styles.HighlightsItem}>Screen Time</Text>
-      <Text style={styles.HighlightsSubItem}>4 Hours</Text>
+      <Text style={styles.HeaderItem}>Goals</Text>
+      <Text style={styles.HighlightsItem}>Trending Down 9%</Text>
+      <Text style={styles.HighlightsSubItem}>3500/5000 Steps</Text>
+      <Text style={styles.HighlightsItem}>Trending Up 10%</Text>
+      <Text style={styles.HighlightsSubItem}>9 Hours</Text>
     </View>
   );
 }
@@ -18,6 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0ffff',
     borderColor: '#191970',
     width: 380,
+    marginLeft:10
   },
   HeaderItem: {
     textAlign: 'center',

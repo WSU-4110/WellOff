@@ -1,21 +1,22 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
+import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser} from './HomePageModel';
 
 export default function LeftJustifiedItems() {
     return (
 <View style={styles.container}>
     <View style={styles.space} />
     <View style = {[styles.TimeContainer, styles.elevation]}>
-    <Text style={styles.TimeSample1}>  Steps Taken <Text style={styles. SampleContent}>  3578/5000</Text> </Text>
+    <Text style={styles.TimeSample1}> Steps<Text style={styles. SampleContent}> {steps}/{stepsGoal}</Text> </Text>
     </View>
     <View style={styles.space} />
     <View style={[styles.TimeContainer, styles.elevation]}>
-    <Text style={styles.TimeSample2}>  Screen time <Text style={styles.SampleContent}>  4h/3h</Text></Text>
+    <Text style={styles.TimeSample2}>  Screen time <Text style={styles.SampleContent}> {screen}h/{screenGoal}h</Text></Text>
     </View>
     <View style={styles.space} />
     <View style={[styles.TimeContainer, styles.elevation]}>
-    <Text style={styles.TimeSample3}>  Sleep <Text style={styles. SampleContent}>  6h/8h</Text></Text>
+    <Text style={styles.TimeSample3}>  Sleep <Text style={styles. SampleContent}>  {sleep}h/{sleepGoal}h</Text></Text>
     </View>
     </View>
   );

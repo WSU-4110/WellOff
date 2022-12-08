@@ -8,12 +8,13 @@ import TimeModule from '../assets/components/homepagecomp/TimeModule';
 import RightJustifiedDatePick from '../assets/components/homepagecomp/RightJustifiedDatePick';
 import CircularGraph from '../assets/components/homepagecomp/CircularGraph';
 import HighlightReplace from '../assets/components/homepagecomp/HighlightReplace';
-import Background from 'react-native-background-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 import WelcomeText from '../assets/components/homepagecomp/WelcomeText';
 
 
 const HomeScreen = () => {
     return (
+      <LinearGradient colors={['#D4BFFD', '#8f91f9', '#8f91f9']}>
       <ScrollView>
       <View style={styles.container} >
       <LeftJustifiedItems />
@@ -41,6 +42,7 @@ const HomeScreen = () => {
       <View style={styles.space} />
     </View>
     </ScrollView>
+    </LinearGradient>
     );
 };
 

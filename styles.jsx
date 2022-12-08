@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     },
     sectionContainer: {
         marginTop: 16,
-        paddingHorizontal: 24,
         marginBottom: 16,
     },
     sectionTitle: {
@@ -45,16 +44,17 @@ const styles = StyleSheet.create({
         color: "white",
         fontWeight: '600',
         backgroundColor: "#05445E",
-        paddingLeft: 5
     },
     switch: {
         alignItems: 'flex-end',
     },
+
     switchContainer: {
         flexDirection: 'row',
         paddingTop: 20,
-        paddingLeft: 5,
-        justifyContent: 'space-between'
+        paddingLeft: 30,
+        justifyContent: 'space-between',
+        color: '#05445E', 
     }
 });
 

@@ -25,13 +25,14 @@ export default function WeeklyReport(){
 const styles = StyleSheet.create({
     text: {
         color: '#05445E', 
-        fontSize: 20, 
+        fontSize: 15, 
         // paddingTop: 80,
-        paddingLeft: 20,
-        fontWeight: 'bold',
+        paddingLeft: 30,
+    
     },
 
     switch: {
        alignItems: 'flex-end',
+       paddingLeft: 125
     }
 });

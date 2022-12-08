@@ -4,6 +4,7 @@ import GoalReport from '../../assets/components/healthstatpagecomp/GoalReport'
 import StepsReport from '../../assets/components/healthstatpagecomp/StepsReport'
 import ScreenReport from '../../assets/components/healthstatpagecomp/ScreenReport'
 import WeeklyReport from '../../assets/components/healthstatpagecomp/WeeklyReport'
+import SleepReport from '../../assets/components/healthstatpagecomp/SleepReport';
 
 const HealthScreen = () => {
     return (
@@ -15,6 +16,7 @@ const HealthScreen = () => {
             <ScreenReport/>
             <View style={styles.space} />
             <View style={styles.space} />
+            <SleepReport />
             <View style={styles.space} />
             <View style={styles.space} />
             <WeeklyReport/>

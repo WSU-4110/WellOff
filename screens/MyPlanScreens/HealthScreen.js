@@ -15,7 +15,6 @@ const HealthScreen = () => {
             <ScreenReport/>
             <View style={styles.space} />
             <View style={styles.space} />
-            <GoalReport/>
             <View style={styles.space} />
             <View style={styles.space} />
             <WeeklyReport/>

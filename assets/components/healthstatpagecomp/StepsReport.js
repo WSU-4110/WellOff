@@ -1,12 +1,14 @@
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
+import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser, currentPicture} from '../homepagecomp/HomePageModel';
+
 
 export default function StepsReport() {
   return (
     <View style={styles.HeaderContainer}>
       <Text style={styles.HeaderItem}>Steps Report</Text>
       <Text style={styles.HighlightsItem}>Steps Taken</Text>
-      <Text style={styles.HighlightsSubItem}>2500/5000</Text>
+      <Text style={styles.HighlightsSubItem}>{steps}/{stepsGoal}</Text>
     </View>
   );
 }

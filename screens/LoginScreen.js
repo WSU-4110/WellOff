@@ -14,35 +14,35 @@ import { GetDailySteps, Login } from '../api/api';
 // 'react-native-gesture-handler';
 
 
-const user = "";
-const pass = "";
+user = "";
+pass = "";
 
 function SubmitLogin(){
-    if(Login("mattyb@gmail.com", "rocks")){
+    if(Login(user, pass)){
         throw "logged in!";
     }
     else{
-        //reload this page or something. idk im not front end
+        throw "login failed.";
     }
 }
 
 const LoginScreen = () => {
     return (
-        <SafeAreaView style={{ flex: 7, justifyContent: 'center' }}>
+        <SafeAreaView style={{ flex: 7, justifyContent: 'center', }}>
             <View style={{ alignItems: 'center', paddingHorizontal: 30 }}>
                 <Text
                     style={{
                         fontSize: 30,
                         fontWeight: '500',
-                        color: '#333',
                         marginBottom: 30,
+                        color: 'black',
                     }}>
                     Login{' '}
                 </Text>
                 <View
                     style={{
                         flexDirection: 'row',
-                        borderBottomColor: '#ccc',
+                        borderBottomColor: 'black',
                         borderBottomWidth: 1,
                         paddingBottom: 8,
                         marginBottom: 25,
@@ -51,12 +51,13 @@ const LoginScreen = () => {
                         placeholder="Email ID"
                         style={{ flex: 8 }}
                         keyboardType="email-address"
+                        onChangeText={(value) => user=value}
                     />
                 </View>
                 <View
                     style={{
                         flexDirection: 'row',
-                        borderBottomColor: '#ccc',
+                        borderBottomColor: 'black',
                         borderBottomWidth: 1,
                         paddingBottom: 8,
                         marginBottom: 25,
@@ -65,6 +66,7 @@ const LoginScreen = () => {
                         placeholder="Password"
                         style={{ flex: 8 }}
                         secureTextEntry={true}
+                        onChangeText={(value) => pass=value}
                     />
                     <TouchableOpacity onPress={() => { }}>
                         <Text style={{ color: 'black', fontWeight: '700' }}>
@@ -75,7 +77,7 @@ const LoginScreen = () => {
                 <TouchableOpacity
                     onPress={() => { SubmitLogin(); }}
                     style={{
-                        backgroundColor: 'blue',
+                        backgroundColor: '#189AB4',
                         padding: 20,
                         borderRadius: 18,
                         marginBottom: 30,

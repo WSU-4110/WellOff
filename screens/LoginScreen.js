@@ -7,7 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import { Login } from '../api/api';
+import { GetDailySteps, Login } from '../api/api';
 // import {AppRegistry} from 'react-native';
 // import App from '../App';
 // import {name as appName} from './app.json';
@@ -19,11 +19,7 @@ const pass = "";
 
 function SubmitLogin(){
     if(Login("mattyb@gmail.com", "rocks")){
-        //open up the main app from App. I'm not sure if we need to use navigation. otherwise dw abt it we can get 
-        //something working and say we didnt get it connected YET or smth
-
-        //could be this? 
-        //AppRegistry.registerComponent(appName, () => App);
+        throw "logged in!";
     }
     else{
         //reload this page or something. idk im not front end

@@ -165,5 +165,7 @@ export {
 
     Themes,
     GetTheme,
-    SetTheme
+    SetTheme,
+
+    Login
 };

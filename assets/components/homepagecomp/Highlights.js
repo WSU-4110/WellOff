@@ -1,7 +1,9 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
-import Background from 'react-native-background-gradient';
+import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser, currentPicture} from '../homepagecomp/HomePageModel';
+
+
 
 export default function Highlights() {
   return (
@@ -9,11 +11,9 @@ export default function Highlights() {
     <Text style={styles.HeaderItem}>Daily Highlights Module</Text>
     <View style={[styles.HeaderContainer, styles.elevation]}>
       <Text style={styles.HighlightsItem}>Average Daily Steps</Text>
-      <Text style={styles.HighlightsSubItem}>4559</Text>
+      <Text style={styles.HighlightsSubItem}>{stepsGoal-305}</Text>
       <Text style={styles.HighlightsItem}>Average Daily Sleep</Text>
-      <Text style={styles.HighlightsSubItem}>6 hr</Text>
-      <Text style={styles.HighlightsItem}>Top Steps Taken</Text>
-      <Text style={styles.HighlightsSubItem}>10569 on November 1st, 2022</Text>
+      <Text style={styles.HighlightsSubItem}>{sleepGoal-1} hr</Text>
     </View>
     </ScrollView>
   );

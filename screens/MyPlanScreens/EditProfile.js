@@ -8,6 +8,7 @@ import {
   Button,
   ScrollView
 } from 'react-native';
+import ProfileNameComp from '../../assets/components/ProfileNameComp';
 
 export default class ProductView extends Component {
 
@@ -94,39 +95,8 @@ export default class ProductView extends Component {
               {this.__renderColors()}
             </View>
                   <View style={styles.cardContent}>
-               <Button  
-                        onPress={this.onPressButton}  
-                        title="Upload Picture"  
-                        color="#189AB4"  
-                    /> 
-             
-                <Button  
-                        onPress={this.onPressButton}  
-                        title="Change Name"  
-                        color="#05445E"  
-                    /> 
-        
-                <Button  
-                        onPress={this.onPressButton}  
-                        title="Connect Social Media"  
-                        color="#189AB4"  
-                    /> 
-          
-                    <Button  
-                        onPress={this.onPressButton}  
-                        title="Reset Profile"  
-                        color="#05445E"  
-                    /> 
+              <ProfileNameComp />
               
-              
-            </View>
-          </View>
-
-          <View style={styles.card}>
-            <View style={styles.cardContent}>
-              <TouchableOpacity style={styles.shareButton} onPress={()=> this.clickEventListener()}>
-                <Text style={styles.shareButtonText}>Save Changes</Text>  
-              </TouchableOpacity>
             </View>
           </View>
         </ScrollView>

@@ -2,13 +2,12 @@ import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser, currentPicture} from '../homepagecomp/HomePageModel';
 
-
-export default function StepsReport() {
+export default function SleepReport() {
   return (
     <View style={styles.HeaderContainer}>
-      <Text style={styles.HeaderItem}>Screen Time</Text>
-      <Text style={styles.HighlightsItem}>Screen Time</Text>
-      <Text style={styles.HighlightsSubItem}>{screen}h / {screenGoal}h</Text>
+      <Text style={styles.HeaderItem}>Sleep Report</Text>
+      <Text style={styles.HighlightsItem}>Sleep Report</Text>
+      <Text style={styles.HighlightsSubItem}>{sleep}h / {sleepGoal}h</Text>
     </View>
   );
 }

@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
-import initializeApp from 'firebase/app';
+import { initializeApp } from 'firebase/app';
+import { getDatabase } from 'firebase/database';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyB3BIt4eL5WvzJDY0-qllYPNmzJYnp-WzA',
@@ -13,5 +14,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
+const db = getDatabase(app);
 
-export {app};
+export default {app};
+export {db};

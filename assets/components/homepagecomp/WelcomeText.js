@@ -1,12 +1,14 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
+import { currentUser} from './HomePageModel';
+
 
 export default function WelcomeText() {
     return (
 <View style={styles.container}>
     <View style={styles.space} />
-        <Text style={styles.HighlightsSubItem}>Welcome Matt.</Text>
+        <Text style={styles.HighlightsSubItem}>Welcome {currentUser}.</Text>
         <Text style={styles.HighlightsSubItem2}>Scroll to view your progress.</Text>
     </View>
   );

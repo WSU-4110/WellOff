@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser} from './HomePageModel';
+import { steps, screen, sleep, stepsGoal, screenGoal, sleepGoal, currentUser, currentPicture} from './HomePageModel';
 
 export default function LeftJustifiedItems() {
     return (

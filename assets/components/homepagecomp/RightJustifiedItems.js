@@ -10,6 +10,7 @@ import RightJustifiedDatePick from './RightJustifiedDatePick';
 import { app } from '../../../Firebase/firebase';
 export default function RightJustifiedItems(){  
 
+export default function RightJustifiedItems() {
     const [time, setTime] = useState(null);
     useEffect(() => {
       let time = getCurrentTime();
@@ -32,20 +33,16 @@ export default function RightJustifiedItems(){
         setDate(date);
       }, []);
 
-
     return (
-    <View styles={styles.container}>
+<View style={styles.container}>
     <View style={styles.space} />
     <View style = {[styles.TimeContainer, styles.elevation]}>
     <Text style={styles.TimeSample1}>{time}</Text>
     <Text style={styles.TimeSample2}>{date}</Text>
     </View>
-      </View>
-        );
- };
-
-
-
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
   TimeContainer: {

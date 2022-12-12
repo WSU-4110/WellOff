@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Images 1`] = `
+<View
+  style={
+    Object {
+      "color": "white",
+      "flexDirection": "row",
+    }
+  }
+>
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#00BFFF",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#FF1493",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#00CED1",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#228B22",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#20B2AA",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#FF4500",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`render colors 1`] = `
+<View
+  style={
+    Object {
+      "color": "white",
+      "flexDirection": "row",
+    }
+  }
+>
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#00BFFF",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#FF1493",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#00CED1",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#228B22",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#20B2AA",
+        },
+      ]
+    }
+  />
+  <TouchableOpacity
+    style={
+      Array [
+        Object {
+          "borderRadius": 40,
+          "height": 40,
+          "marginHorizontal": 3,
+          "width": 40,
+        },
+        Object {
+          "backgroundColor": "#FF4500",
+        },
+      ]
+    }
+  />
+</View>
+`;

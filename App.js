@@ -1,62 +1,117 @@
-/* eslint-disable prettier/prettier */
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
+
 import React from 'react';
-import {Text, View} from 'react-native';
-import Ionic from 'react-native-vector-icons/FontAwesome';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/HomeScreen';
-import MyPlanScreen from './screens/MyPlanScreen';
-import SettingsScreen from './screens/SettingsScreen';
-import HealthScreen from './screens/MyPlanScreens/HealthScreen';
-import ProfileScreen from './screens/MyPlanScreens/EditProfile';
-import PreferencesScreen from './screens/MyPlanScreens/EditPreferences';
-import GoalScreen from './screens/MyPlanScreens/GoalScreen';
+import type {Node} from 'react';
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
 
-const Tab = createBottomTabNavigator();
-const Stack = createNativeStackNavigator();
+import {
+  Colors,
+  DebugInstructions,
+  Header,
+  LearnMoreLinks,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
 
-function HomeTabs() {
+/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
+ * LTI update could not be added via codemod */
+const Section = ({children, title}): Node => {
+  const isDarkMode = useColorScheme() === 'dark';
   return (
-    <Tab.Navigator screenOptions={({route}) => ({
-      tabBarShowLabel: false,
-      tabBarStyle: {
-        backgroundColor: '#000000',
-        height: 80,
-      },
-      headerShown: false,
-      tabBarIcon: ({focused, color, size}) => {
-        let iconName;
-        if (route.name === 'Home') {
-          iconName = focused ? 'ios-home' : 'ios-home-outline';
-        } else if (route.name === 'My Plan') {
-          iconName = focused ? 'ios-home' : 'ios-home-outline';
-        } else if (route.name === 'Settings') {
-          iconName = focused ? 'ios-home' : 'ios-home-outline';
-        } 
-        return <Ionic name={iconName} size={size} color={color} />;
-      },
-    })}>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="My Plan" component={MyPlanScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
-    </Tab.Navigator>
-  );
-}
-
-const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="HomeBottom" component={HomeTabs} options={{headerShown: false}}/>
-        <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: true}}/>
-        <Stack.Screen name="Preferences" component={PreferencesScreen} options={{headerShown: true}}/>
-        <Stack.Screen name="Goals" component={GoalScreen} options={{headerShown: true}}/>
-        <Stack.Screen name="Health" component={HealthScreen} options={{headerShown: true}}/>
-
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
   );
 };
+
+const App: () => Node = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  };
+
+  return (
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+      />
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={backgroundStyle}>
+        <Header />
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+          }}>
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.js</Text> to change this
+            screen and then come back to see your edits.
+          </Section>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
+          </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
 
 export default App;

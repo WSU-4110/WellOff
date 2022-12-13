@@ -4,10 +4,10 @@
 //Contributors: Matthew Meyer
 
 /**
- * Returns a + b
+ * 
  * @param {int} a 
  * @param {int} b 
- * @returns {int} 
+ * @returns {int} a + b
  * @author Matthew Meyer
  */
 function add(a, b){
@@ -17,7 +17,7 @@ function add(a, b){
 /**
  * Returns the positive value of the a
  * @param {int} a 
- * @returns {int}
+ * @returns {int} The positive value of the a
  * @author Matthew Meyer
  */
 function abs(a){
@@ -28,10 +28,10 @@ function abs(a){
 }
 
 /**
- * Returns a / b
+ * 
  * @param {int} a 
  * @param {int} b 
- * @returns {int}
+ * @returns {int} a / b
  * @author Matthew Meyer
  */
 function div(a, b){

@@ -56,3 +56,15 @@ test('Divide by 1 and 2', () => {
 test('Divide by 2 and 1', () => {
   expect(div(1, 2)).toBeCloseTo(0.5);
 });
+
+test('Absoulte value of 1', () => {
+  expect(abs(num2)).toEqual(num2);
+});
+
+test('Absoulte value of 0', () => {
+  expect(abs(num1)).toEqual(num1);
+});
+
+test('Absoulte value of -1', () => {
+  expect(abs(-1)).toEqual(num2);
+});

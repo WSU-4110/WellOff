@@ -22,7 +22,7 @@ function add(a, b){
  */
 function abs(a){
     if (a < 0){
-        a * -1;
+        return a * -1;
     }
     return a;
 }
